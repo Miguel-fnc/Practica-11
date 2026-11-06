@@ -11,3 +11,10 @@ variable "account_id" {
   sensitive   = true
   default     = null
 }
+
+variable "api_token" {
+  description = "Cloudflare API token withworkers and D1 permission"
+  type        = string
+  sensitive   = true
+  default     = null
+}

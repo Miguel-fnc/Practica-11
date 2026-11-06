@@ -11,3 +11,10 @@ variable "d1_database_name" {
   sensitive   = true
   default     = null
 }
+
+variable "api_token" {
+  description = "Cloudflare API token withworkers and D1 permission"
+  type        = string
+  sensitive   = true
+  default     = null
+}
