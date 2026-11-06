@@ -5,7 +5,6 @@ variable "api_token" {
   default     = null
 }
 
-
 variable "account_id" {
   description = "Cloudflare Account ID"
   type        = string
@@ -13,15 +12,15 @@ variable "account_id" {
   default     = null
 }
 
-variable "d1_database_name" {
-  description = "D1 database name"
+variable "worker_name" {
+  description = "worker name"
   type        = string
   sensitive   = true
   default     = null
 }
 
-variable "worker_name" {
-  description = "worker name"
+variable "d1_database_name" {
+  description = "D1 database name"
   type        = string
   sensitive   = true
   default     = null
