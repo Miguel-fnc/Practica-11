@@ -2,7 +2,7 @@ resource "cloudflare_workers_script" "myworker" {
   account_id  = var.account_id
   script_name = var.worker_name
   main_module = "worker.js"
-  content     = file("../../worker.js")
+  content     = file("./worker.js")
 
   compatibility_date = "2025-10-28"
 }
