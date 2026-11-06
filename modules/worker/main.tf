@@ -5,14 +5,6 @@ resource "cloudflare_workers_script" "myworker" {
   content     = file("../../worker.js")
 
   compatibility_date = "2025-10-28"
-
-  bindings = [
-    {
-      name = "DB"
-      type = "d1"
-      id   = cloudflare_d1_database.app.id
-    }
-  ]
 }
 
 resource "cloudflare_workers_script_subdomain" "myworker" {
